@@ -56,9 +56,12 @@ body {
 
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  list-style-type: none;
 }
 
 .nav-links a {
@@ -457,4 +460,14 @@ html {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   color: #333;
   text-align: left;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none; /* hide menu */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger icon */
+  }
 }
