@@ -58,7 +58,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -74,6 +74,37 @@ body {
   border-radius: 4px;
   font-weight: 600;
   color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 4px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 .btn-outline {
