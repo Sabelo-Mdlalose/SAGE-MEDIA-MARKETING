@@ -13,7 +13,7 @@ body {
 }
 
 .bg-wrapper {
-  background-image: url('/Users/sabelomdlalose/Downloads/IMG_0575.JPG'); /* Replace with your image path */
+  background-image: url('IMG_0575.JPG'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
