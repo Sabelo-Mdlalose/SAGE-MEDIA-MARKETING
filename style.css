@@ -13,7 +13,7 @@ body {
 }
 
 .bg-wrapper {
-  background-image: url('IMG_0575.JPG'); /* Replace with your image path */
+  background-image: url('/Users/sabelomdlalose/Downloads/IMG_0575.JPG'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,12 +56,9 @@ body {
 
 
 .nav-links {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  list-style-type: none;
+  gap: 30px;
 }
 
 .nav-links a {
@@ -462,12 +459,3 @@ html {
   text-align: left;
 }
 
-@media (max-width: 600px) {
-  .nav-links {
-    display: none; /* hide menu */
-  }
-
-  .menu-toggle {
-    display: block; /* show hamburger icon */
-  }
-}
