@@ -152,10 +152,25 @@ body {
 /* SERVICES */
 .services {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 40px 20px;
   background-color: #fff;
 }
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .service-card {
   background-color: #f9f9f9;
@@ -164,6 +179,13 @@ body {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  margin: 10px;
+  flex: 1 1 100%;
+  min-width: 250px;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .service-card h2 {
